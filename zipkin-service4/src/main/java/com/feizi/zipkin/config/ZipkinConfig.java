@@ -33,7 +33,7 @@ public class ZipkinConfig {
                 .flushInterval(1)
                 .readTimeout(6000)
                 .build();
-        return HttpSpanCollector.create("http://10.0.4.62:9411", config, new EmptySpanCollectorMetricsHandler());
+        return HttpSpanCollector.create("http://127.0.0.1:9411", config, new EmptySpanCollectorMetricsHandler());
     }
 
     /**
